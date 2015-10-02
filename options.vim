@@ -4,8 +4,8 @@
 " Sets how many lines of history VIM has to remember
 set history=700
 
-" Disable dupe file checker in MBE as it is too slow.
-let g:miniBufExplCheckDupeBufs = 0
+" Show hidden files
+let NERDTreeShowHidden=1
 
 " Set background
 hi Normal          ctermfg=252 ctermbg=none

@@ -45,7 +45,6 @@ call vundle#begin()
   Plugin 'SirVer/ultisnips'
   Plugin 'joonty/vdebug.git'
   Plugin 'scrooloose/nerdcommenter'
-  Plugin 'suan/vim-instant-markdown'
 
 call vundle#end()
 
