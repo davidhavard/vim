@@ -10,6 +10,9 @@ let NERDTreeShowHidden=1
 " Set background
 hi Normal          ctermfg=252 ctermbg=none
 
+" Colorizer
+let g:colorizer_nomap = 1
+
 " Remove php variables from tagbar
 let g:tagbar_type_php  = {
 \ 'ctagstype' : 'php',
@@ -169,7 +172,8 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-colorscheme ir_black
+colorscheme base16-pop
+let base16colorspace = 256
 
 set background=dark
 

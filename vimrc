@@ -30,10 +30,10 @@ call vundle#begin()
   Plugin 'luochen1990/rainbow'
   Plugin 'Lokaltog/vim-powerline'
   Plugin 'majutsushi/tagbar'
+  Plugin 'lilydjwg/colorizer'
 
   " Colorschemes
-  Plugin 'twerth/ir_black'
-  Plugin 'davidhavard/paint_it_black'
+  Plugin 'chriskempson/base16-vim'
 
   " Awesome extras
   Plugin 'mileszs/ack.vim'
