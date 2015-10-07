@@ -8,7 +8,7 @@ set history=700
 let NERDTreeShowHidden=1
 
 " Set background
-hi Normal          ctermfg=252 ctermbg=none
+hi Normal ctermfg=252 ctermbg=none
 
 " Colorizer
 let g:colorizer_nomap = 1
@@ -109,7 +109,6 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
-
 set background=dark
 
 " Set extra options when running in GUI mode
@@ -177,7 +176,7 @@ let base16colorspace = 256
 
 set background=dark
 
-set gfn=Monospace\ 10
+set gfn=Anonymous\ Pro\ 12
 set shell=/usr/bin/zsh
 
 set guioptions-=r
