@@ -24,6 +24,7 @@ call vundle#begin()
   Plugin 'groenewege/vim-less'
   Plugin 'skammer/vim-css-color'
   Plugin 'hail2u/vim-css3-syntax'
+  Plugin 'burnettk/vim-angular'
 
   " GUI Enhancements
   Plugin 'scrooloose/nerdtree'
@@ -43,7 +44,6 @@ call vundle#begin()
   Plugin 'tpope/vim-surround'
   Plugin 'kien/ctrlp.vim'
   Plugin 'SirVer/ultisnips'
-  Plugin 'joonty/vdebug.git'
   Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()

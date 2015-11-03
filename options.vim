@@ -7,9 +7,6 @@ set history=700
 " Show hidden files
 let NERDTreeShowHidden=1
 
-" Set background
-hi Normal ctermfg=252 ctermbg=none
-
 " Colorizer
 let g:colorizer_nomap = 1
 
@@ -109,8 +106,6 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
-set background=dark
-
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions=''	" Eliminate the GUI. (It's useless, but gVim > terminal Vim because X11 and full 24-bit colours.
@@ -171,10 +166,9 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-colorscheme base16-pop
-let base16colorspace = 256
-
 set background=dark
+let base16colorspace = 256
+colorscheme base16-pop
 
 set gfn=Anonymous\ Pro\ 12
 set shell=/usr/bin/zsh
