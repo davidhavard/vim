@@ -22,7 +22,7 @@ call vundle#begin()
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'digitaltoad/vim-jade'
   Plugin 'groenewege/vim-less'
-  Plugin 'skammer/vim-css-color'
+  Plugin 'ap/vim-css-color'
   Plugin 'hail2u/vim-css3-syntax'
   Plugin 'burnettk/vim-angular'
 
@@ -31,7 +31,7 @@ call vundle#begin()
   Plugin 'luochen1990/rainbow'
   Plugin 'Lokaltog/vim-powerline'
   Plugin 'majutsushi/tagbar'
-  Plugin 'lilydjwg/colorizer'
+  "Plugin 'lilydjwg/colorizer'
 
   " Colorschemes
   Plugin 'chriskempson/base16-vim'
@@ -41,10 +41,10 @@ call vundle#begin()
   Plugin 'nathanaelkane/vim-indent-guides'
   Plugin 'tpope/vim-fugitive'
   Plugin 'scratch.vim'
-  Plugin 'tpope/vim-surround'
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'SirVer/ultisnips'
-  Plugin 'scrooloose/nerdcommenter'
+  "Plugin 'tpope/vim-surround'
+  "Plugin 'kien/ctrlp.vim'
+  "Plugin 'SirVer/ultisnips'
+  "Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 
