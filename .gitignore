@@ -1,4 +1,5 @@
 bundle/*
-autosess
-temp_dirs
+autosess/*
+temp_dirs/*
 .netrwhist
+.nvim
