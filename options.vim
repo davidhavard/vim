@@ -6,6 +6,9 @@ set history=700
 
 " Show hidden files
 let NERDTreeShowHidden=1
+au VimEnter *  NERDTree
+au VimEnter *  T new
+au VimEnter *  :res 55
 
 " Colorizer
 let g:colorizer_nomap = 1

@@ -41,10 +41,7 @@ call vundle#begin()
   Plugin 'nathanaelkane/vim-indent-guides'
   Plugin 'tpope/vim-fugitive'
   Plugin 'scratch.vim'
-  "Plugin 'tpope/vim-surround'
-  "Plugin 'kien/ctrlp.vim'
-  "Plugin 'SirVer/ultisnips'
-  "Plugin 'scrooloose/nerdcommenter'
+  Plugin 'kassio/neoterm'
 
 call vundle#end()
 
