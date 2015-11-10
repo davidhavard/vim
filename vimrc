@@ -1,8 +1,7 @@
 set nocompatible
 filetype off
-source ~/.vim/functions.vim
+
 cd /home/david/development
-let g:rainbow_active = 1
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -47,6 +46,7 @@ call vundle#end()
 
 " Everything is stored in these files.]
 " Make good use of them.
-source ~/.vim/functions.vim
-source ~/.vim/options.vim
-source ~/.vim/mappings.vim
+source ~/.vim/func.vim
+source ~/.vim/let.vim
+source ~/.vim/map.vim
+source ~/.vim/au.vim

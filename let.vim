@@ -4,11 +4,10 @@
 " Sets how many lines of history VIM has to remember
 set history=700
 
+let g:rainbow_active = 1
+
 " Show hidden files
 let NERDTreeShowHidden=1
-au VimEnter *  NERDTree
-au VimEnter *  T new
-au VimEnter *  :res 55
 
 " Colorizer
 let g:colorizer_nomap = 1
@@ -31,9 +30,6 @@ let g:rainbow_conf = {
 \   'operators': '_,_',
 \   'parentheses': [['(',')'], ['\[','\]'], ['{','}']]
 \}
-
-" Set php syntax checkers:
-let g:syntastic_php_checkers=['php', 'phpmd']
 
 " Enable filetype plugins
 filetype plugin on
@@ -164,7 +160,7 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
-"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
