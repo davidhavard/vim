@@ -30,7 +30,7 @@ call vundle#begin()
   Plugin 'luochen1990/rainbow'
   Plugin 'Lokaltog/vim-powerline'
   Plugin 'majutsushi/tagbar'
-  "Plugin 'lilydjwg/colorizer'
+  Plugin 'lilydjwg/colorizer'
 
   " Colorschemes
   Plugin 'chriskempson/base16-vim'
