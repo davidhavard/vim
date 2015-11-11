@@ -18,3 +18,11 @@ nmap <Left>  :bp<cr>
 nmap <Right> :bn<cr>
 nmap <Up>    :NERDTreeToggle<cr>
 nmap <Down>  :TagbarToggle<cr>
+
+" Useful maps
+" hide/close all terminals
+nnoremap <silent> ,k :call neoterm#close_all()<cr>
+" clear terminal
+nnoremap <silent> ,c :call neoterm#clear()<cr>
+
+command! -nargs=+ Tg :T git <args>
