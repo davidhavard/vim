@@ -50,7 +50,7 @@ let g:mapleader = ","
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k
+" Set scroll offset
 set so=7
 
 " Turn on the WiLd menu
@@ -93,6 +93,7 @@ set magic
 
 " Show matching brackets when text indicator is over them
 set showmatch 
+
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
@@ -118,17 +119,11 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files, backups and undo
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off, since most stuff is in SVN, git etc. anyway...
+" Turn backup off, since most stuff is in source control anyway...
 set nobackup
 set nowb
 set noswapfile
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 set expandtab
 
@@ -145,16 +140,13 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-
-set nowrap " DONT Wrap lines
+ 
+" Don't Wrap lines
+set nowrap
 
 " Remember info about open buffers on close
 set viminfo^=%
 
-
-""""""""""""""""""""""""""""""
-" => Status line
-""""""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
 
@@ -185,9 +177,6 @@ endtry
 
 "" vim Powerline.
 let g:Powerline_symbols = 'unicode'
-
-" Quick Date insert.
-iab <expr> dts strftime("%c")
 
 " CtrlP Options
 let g:ctrlp_map = '<c-p>'
