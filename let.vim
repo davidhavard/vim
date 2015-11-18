@@ -51,7 +51,7 @@ let g:mapleader = ","
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set scroll offset
-set so=7
+set so=5
 
 " Turn on the WiLd menu
 set wildmenu
@@ -118,6 +118,10 @@ set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+" Enable persistent undo
+set undofile
+set undodir=~/.vimundo
 
 " Turn backup off, since most stuff is in source control anyway...
 set nobackup
