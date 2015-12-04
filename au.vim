@@ -9,5 +9,3 @@ au BufReadPost *
   \ endif
 
 au VimEnter *  NERDTree
-au VimEnter *  Tnew
-au VimEnter *  :res 58
