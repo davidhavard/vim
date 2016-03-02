@@ -8,4 +8,4 @@ au BufReadPost *
   \   exe "normal! g`\"" |
   \ endif
 
-au VimEnter *  NERDTree
+" au VimEnter *  NERDTree

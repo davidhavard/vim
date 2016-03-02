@@ -3,46 +3,40 @@ filetype off
 
 cd /home/david/development
 
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin()
-
-  " Vundles...
-  " Base Vundle
-  Plugin 'gmarik/Vundle.vim'
-  "=====================
+call plug#begin('~/.vim/plugged')
 
   " Syntaxes
-  Plugin 'tpope/vim-markdown'
-  Plugin 'php.vim'
-  Plugin 'pangloss/vim-javascript'
-  Plugin 'xmledit'
-  Plugin 'scrooloose/syntastic'
-  Plugin 'kchmck/vim-coffee-script'
-  Plugin 'digitaltoad/vim-jade'
-  Plugin 'groenewege/vim-less'
-  Plugin 'ap/vim-css-color'
-  Plugin 'hail2u/vim-css3-syntax'
-  Plugin 'burnettk/vim-angular'
+  Plug 'tpope/vim-markdown'
+  Plug 'php.vim'
+  Plug 'pangloss/vim-javascript'
+  Plug 'xmledit'
+  Plug 'scrooloose/syntastic'
+  Plug 'kchmck/vim-coffee-script'
+  Plug 'digitaltoad/vim-jade'
+  Plug 'groenewege/vim-less'
+  Plug 'ap/vim-css-color'
+  Plug 'hail2u/vim-css3-syntax'
+  Plug 'burnettk/vim-angular'
+  Plug 'OrangeT/vim-csharp'
 
   " GUI Enhancements
-  Plugin 'scrooloose/nerdtree'
-  Plugin 'luochen1990/rainbow'
-  Plugin 'Lokaltog/vim-powerline'
-  Plugin 'majutsushi/tagbar'
-  Plugin 'lilydjwg/colorizer'
+  Plug 'scrooloose/nerdtree'
+  Plug 'luochen1990/rainbow'
+  Plug 'Lokaltog/vim-powerline'
+  Plug 'majutsushi/tagbar'
+  Plug 'lilydjwg/colorizer'
 
   " Colorschemes
-  Plugin 'chriskempson/base16-vim'
+  Plug 'chriskempson/base16-vim'
 
   " Awesome extras
-  Plugin 'mileszs/ack.vim'
-  Plugin 'nathanaelkane/vim-indent-guides'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'scratch.vim'
-  Plugin 'kassio/neoterm'
+  Plug 'mileszs/ack.vim'
+  Plug 'nathanaelkane/vim-indent-guides'
+  Plug 'tpope/vim-fugitive'
+  Plug 'scratch.vim'
+  Plug 'kassio/neoterm'
 
-call vundle#end()
+call plug#end()
 
 " Everything is stored in these files.]
 " Make good use of them.
