@@ -18,12 +18,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'hail2u/vim-css3-syntax'
   Plug 'burnettk/vim-angular'
   Plug 'OrangeT/vim-csharp'
+  Plug 'leafgarland/typescript-vim'
 
   " GUI Enhancements
   Plug 'scrooloose/nerdtree'
   Plug 'luochen1990/rainbow'
   Plug 'Lokaltog/vim-powerline'
-  Plug 'majutsushi/tagbar'
   Plug 'lilydjwg/colorizer'
 
   " Colorschemes

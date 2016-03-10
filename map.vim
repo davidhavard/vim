@@ -12,12 +12,10 @@ map <C-l> <C-W>l
 map <Right> :bn<cr>
 map <Left>  :bp<cr>
 map <Up>    :NERDTreeToggle<cr>
-map <Down>  :TagbarToggle<cr>
 
 nmap <Left>  :bp<cr>
 nmap <Right> :bn<cr>
 nmap <Up>    :NERDTreeToggle<cr>
-nmap <Down>  :TagbarToggle<cr>
 
 " Useful maps
 " hide/close all terminals
