@@ -21,20 +21,15 @@ call plug#begin('~/.vim/plugged')
   Plug 'leafgarland/typescript-vim'
 
   " GUI Enhancements
-  Plug 'scrooloose/nerdtree'
-  Plug 'luochen1990/rainbow'
+  Plug 'Shougo/unite.vim'
   Plug 'Lokaltog/vim-powerline'
   Plug 'lilydjwg/colorizer'
 
   " Colorschemes
   Plug 'chriskempson/base16-vim'
 
-  " Awesome extras
-  Plug 'mileszs/ack.vim'
-  Plug 'nathanaelkane/vim-indent-guides'
   Plug 'tpope/vim-fugitive'
   Plug 'scratch.vim'
-  Plug 'kassio/neoterm'
 
 call plug#end()
 

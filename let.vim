@@ -4,26 +4,11 @@
 " Sets how many lines of history VIM has to remember
 set history=700
 
-let g:rainbow_active = 1
-
-" Show hidden files
-let NERDTreeShowHidden=1
-
 " Colorizer
 let g:colorizer_nomap = 1
 
-" Remove php variables from tagbar
-let g:tagbar_type_php  = {
-\ 'ctagstype' : 'php',
-\ 'kinds'     : [
-    \ 'i:interfaces',
-    \ 'c:classes',
-    \ 'd:constant definitions',
-    \ 'f:functions',
-    \ 'j:javascript functions:1'
-\ ]
-\ }
-
+" Rainbow
+let g:rainbow_active = 1
 let g:rainbow_conf = {
 \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
 \   'ctermfgs': ['darkgray', 'darkblue', 'darkmagenta', 'darkcyan'],
@@ -41,6 +26,8 @@ set autoread
 
 " Line Numbers!
 set number
+" Relative Line Numbers
+set relativenumber
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
@@ -56,10 +43,6 @@ set so=5
 " Turn on the WiLd menu
 set wildmenu
 
-" Ignore compiled files
-set wildignore=*.o,*~,*.pyc
-set wildignore+=.git\*,.hg\*,.svn\*
-
 "Always show current position
 set ruler
 
@@ -72,9 +55,6 @@ set hid
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
-
-" Ignore case when searching
-set ignorecase
 
 " When searching try to be smart about cases 
 set smartcase
@@ -100,18 +80,10 @@ set mat=2
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
-set t_vb=
 set tm=500
 
 " Add a bit extra margin to the left
 set foldcolumn=1
-
-" Set extra options when running in GUI mode
-if has("gui_running")
-    set guioptions=''	" Eliminate the GUI. (It's useless, but gVim > terminal Vim because X11 and full 24-bit colours.
-    set t_Co=256
-    set guitablabel=%M\ %t
-endif
 
 " Set utf8, the one true encoding.
 set encoding=utf8
@@ -134,7 +106,7 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
+" 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
 
@@ -179,9 +151,6 @@ try
 catch
 endtry
 
-"" vim Powerline.
+" Powerline.
 let g:Powerline_symbols = 'unicode'
 
-" CtrlP Options
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
