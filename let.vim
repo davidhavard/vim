@@ -131,6 +131,12 @@ set background=dark
 let base16colorspace = 256
 colorscheme base16-pop
 
+" Add margin for columns
+set foldcolumn=1
+
+" Add status bar to the top
+set stal=2
+
 " Font
 set gfn=Anonymous\ Pro\ 12
 
