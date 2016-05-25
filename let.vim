@@ -82,9 +82,6 @@ set noerrorbells
 set novisualbell
 set tm=500
 
-" Add a bit extra margin to the left
-set foldcolumn=1
-
 " Set utf8, the one true encoding.
 set encoding=utf8
 
@@ -129,27 +126,16 @@ set laststatus=2
 " Format the status line
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => GUI related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+" Colorscheme
 set background=dark
 let base16colorspace = 256
 colorscheme base16-pop
 
+" Font
 set gfn=Anonymous\ Pro\ 12
+
+" Set shell command
 set shell=/usr/bin/zsh
-
-set guioptions-=r
-set guioptions-=R
-set guioptions-=l
-set guioptions-=L
-
-try
-  set switchbuf=useopen,usetab,newtab
-  set stal=2
-catch
-endtry
 
 " Powerline.
 let g:Powerline_symbols = 'unicode'
