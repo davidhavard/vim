@@ -20,16 +20,18 @@ call plug#begin('~/.vim/plugged')
   Plug 'OrangeT/vim-csharp'
   Plug 'leafgarland/typescript-vim'
 
-  " GUI Enhancements
+  " Enhancements
   Plug 'Shougo/unite.vim'
-  Plug 'Lokaltog/vim-powerline'
+  Plug 'Shougo/vimproc.vim'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
   Plug 'lilydjwg/colorizer'
-
-  " Colorschemes
-  Plug 'chriskempson/base16-vim'
-
   Plug 'tpope/vim-fugitive'
   Plug 'scratch.vim'
+
+
+  " Colorschemes
+  Plug 'davidhavard/base16-vim'
 
 call plug#end()
 
