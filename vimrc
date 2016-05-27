@@ -27,6 +27,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'lilydjwg/colorizer'
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-abolish'
   Plug 'scratch.vim'
 
 
