@@ -1,8 +1,6 @@
 set nocompatible
 filetype off
 
-cd /home/david/development
-
 call plug#begin('~/.vim/plugged')
 
   " Syntaxes
@@ -31,13 +29,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'scratch.vim'
 
 
-  " Colorschemes
+  " Color schemes
   Plug 'davidhavard/base16-vim'
 
 call plug#end()
 
-" Everything is stored in these files.]
-" Make good use of them.
 source ~/.vim/func.vim
 source ~/.vim/let.vim
 source ~/.vim/map.vim
