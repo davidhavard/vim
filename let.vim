@@ -7,15 +7,6 @@ set history=700
 " Colorizer
 let g:colorizer_nomap = 1
 
-" Rainbow
-let g:rainbow_active = 1
-let g:rainbow_conf = {
-\   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
-\   'ctermfgs': ['darkgray', 'darkblue', 'darkmagenta', 'darkcyan'],
-\   'operators': '_,_',
-\   'parentheses': [['(',')'], ['\[','\]'], ['{','}']]
-\}
-
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
@@ -26,6 +17,7 @@ set autoread
 
 " Line Numbers!
 set number
+
 " Relative Line Numbers
 set relativenumber
 
@@ -124,7 +116,7 @@ set viminfo^=%
 set laststatus=2
 
 " Format the status line
-set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+" set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
 
 " Colorscheme
 set background=dark
@@ -142,9 +134,6 @@ set gfn=Anonymous\ Pro\ 12
 
 " Set shell command
 set shell=/usr/bin/zsh
-
-" Powerline.
-let g:Powerline_symbols = 'unicode'
 
 " Unite
 let g:unite_source_grep_command = 'ag'
