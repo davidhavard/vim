@@ -146,3 +146,31 @@ set shell=/usr/bin/zsh
 " Powerline.
 let g:Powerline_symbols = 'unicode'
 
+" Unite
+let g:unite_source_grep_command = 'ag'
+let g:unite_source_grep_default_opts =
+      \ '-i --vimgrep --hidden ' .
+      \ '--ignore ''node_modules'' --ignore ''.git'' --ignore ''temp_dirs'' --ignore ''plugged'' --ignore ''bower_components'''
+let g:unite_source_grep_recursive_opts = ''
+
+call unite#custom#source('file_rec/async', 'ignore_pattern', 'node_modules/\|bower_components/\|plugged/\|temp_dirs')
+
+let g:unite_source_menu_menus = get(g:,'unite_source_menu_menus',{})
+let g:unite_source_menu_menus.git = {
+    \ 'description' : '             Manage git Repos
+        \                            ⌘ [space]g',
+    \}
+let g:unite_source_menu_menus.git.command_candidates = [
+    \['▷ git status   ', 'Gstatus'],
+    \['▷ git diff     ', 'Gdiff'],
+    \['▷ git add      ', 'Gwrite'],
+    \['▷ git commit   ', 'Gcommit'],
+    \['▷ git log      ', 'Glog'],
+    \['▷ git blame    ', 'Gblame'],
+    \['▷ git stage    ', 'Gwrite'],
+    \['▷ git checkout ', 'Gread'],
+    \['▷ git rm       ', 'Gremove'],
+    \['▷ git push     ', 'Git! push'],
+    \['▷ git pull     ', 'Git! pull']
+    \]
+nnoremap <silent>[menu]g :Unite -silent -start-insert menu:git<CR>
