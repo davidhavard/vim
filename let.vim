@@ -150,16 +150,16 @@ let g:unite_source_menu_menus.git = {
         \                            ⌘ [space]g',
     \}
 let g:unite_source_menu_menus.git.command_candidates = [
-    \['▷ git status   ', 'Gstatus'],
-    \['▷ git diff     ', 'Gdiff'],
     \['▷ git add      ', 'Gwrite'],
     \['▷ git commit   ', 'Gcommit'],
+    \['▷ git push     ', 'Git! push'],
+    \['▷ git pull     ', 'Git! pull'],
+    \['▷ git status   ', 'Gstatus'],
+    \['▷ git diff     ', 'Gdiff'],
     \['▷ git log      ', 'Glog'],
     \['▷ git blame    ', 'Gblame'],
     \['▷ git stage    ', 'Gwrite'],
     \['▷ git checkout ', 'Gread'],
-    \['▷ git rm       ', 'Gremove'],
-    \['▷ git push     ', 'Git! push'],
-    \['▷ git pull     ', 'Git! pull']
+    \['▷ git rm       ', 'Gremove']
     \]
 nnoremap <silent>[menu]g :Unite -silent -start-insert menu:git<CR>
