@@ -27,6 +27,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-abolish'
   Plug 'scratch.vim'
+  Plug 'sirver/ultisnips'
+  Plug 'honza/vim-snippets'
 
 
   " Color schemes

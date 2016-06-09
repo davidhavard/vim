@@ -139,10 +139,10 @@ set shell=/usr/bin/zsh
 let g:unite_source_grep_command = 'ag'
 let g:unite_source_grep_default_opts =
       \ '-i --vimgrep --hidden ' .
-      \ '--ignore ''node_modules'' --ignore ''.git'' --ignore ''temp_dirs'' --ignore ''plugged'' --ignore ''bower_components'''
+      \ '--ignore ''node_modules'' --ignore ''.git'' --ignore ''temp_dirs'' --ignore ''plugged'' --ignore ''bower_components'' --ignore ''.sass-cache'' --ignore ''dist'''
 let g:unite_source_grep_recursive_opts = ''
 
-call unite#custom#source('file_rec/async', 'ignore_pattern', 'node_modules/\|bower_components/\|plugged/\|temp_dirs')
+call unite#custom#source('file_rec/async', 'ignore_pattern', 'node_modules/\|bower_components/\|plugged/\|temp_dirs/\|.sass-cache/\|dist/')
 
 let g:unite_source_menu_menus = get(g:,'unite_source_menu_menus',{})
 let g:unite_source_menu_menus.git = {
@@ -150,7 +150,7 @@ let g:unite_source_menu_menus.git = {
         \                            ⌘ [space]g',
     \}
 let g:unite_source_menu_menus.git.command_candidates = [
-    \['▷ git add      ', 'Gwrite'],
+    \['▷ git add      ', 'Git add -A'],
     \['▷ git commit   ', 'Gcommit'],
     \['▷ git push     ', 'Git! push'],
     \['▷ git pull     ', 'Git! pull'],
@@ -163,3 +163,4 @@ let g:unite_source_menu_menus.git.command_candidates = [
     \['▷ git rm       ', 'Gremove']
     \]
 nnoremap <silent>[menu]g :Unite -silent -start-insert menu:git<CR>
+
