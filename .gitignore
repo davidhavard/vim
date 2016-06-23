@@ -1,5 +1,6 @@
 plugged
 autosess/*
+sessions/*
 temp_dirs/*
 .netrwhist
 .nvim

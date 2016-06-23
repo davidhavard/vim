@@ -29,6 +29,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'scratch.vim'
   Plug 'sirver/ultisnips'
   Plug 'honza/vim-snippets'
+  Plug 'xolox/vim-misc'
+  Plug 'xolox/vim-session'
 
 
   " Color schemes
