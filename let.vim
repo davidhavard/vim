@@ -164,10 +164,5 @@ let g:unite_source_menu_menus.git.command_candidates = [
     \]
 nnoremap <silent>[menu]g :Unite -silent -start-insert menu:git<CR>
 
-" Session
-let g:session_autosave='yes'
-let g:session_autosave_periodic=1
-let g:session_autosave_silent=1
-let g:session_default_to_last=1
-let g:session_autoload='yes'
-let g:session_menu=0
+" Unite Session
+let g:unite_source_session_enable_auto_save=1

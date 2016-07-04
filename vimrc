@@ -20,6 +20,7 @@ call plug#begin('~/.vim/plugged')
 
   " Enhancements
   Plug 'Shougo/unite.vim'
+  Plug 'Shougo/unite-session'
   Plug 'Shougo/vimproc.vim'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -30,7 +31,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'sirver/ultisnips'
   Plug 'honza/vim-snippets'
   Plug 'xolox/vim-misc'
-  Plug 'xolox/vim-session'
 
 
   " Color schemes

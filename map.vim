@@ -15,8 +15,8 @@ map <Left>  :bp<cr>
 nmap <Left>  :bp<cr>
 nmap <Right> :bn<cr>
 
-nnoremap <C-p> :Unite -start-insert -no-quit -keep-focus file_rec/async<cr>
+nnoremap <C-p> :Unite -start-insert file_rec/async<cr>
 nnoremap <C-b> :Unite buffer<cr>
-nnoremap <C-f> :Unite -no-quit -keep-focus grep:.<cr>
+nnoremap <C-f> :Unite grep:.<cr>
 nnoremap <C-m> :Unite menu<cr>
-nnoremap <C-g> :Unite menu:git<cr>
+nnoremap <C-s> :Unite session<cr>
