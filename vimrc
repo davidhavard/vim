@@ -4,34 +4,22 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
   " Syntaxes
+  Plug 'w0rp/ale'
   Plug 'tpope/vim-markdown'
-  Plug 'php.vim'
   Plug 'pangloss/vim-javascript'
-  Plug 'xmledit'
-  Plug 'scrooloose/syntastic'
-  Plug 'kchmck/vim-coffee-script'
-  Plug 'digitaltoad/vim-jade'
-  Plug 'groenewege/vim-less'
-  Plug 'ap/vim-css-color'
-  Plug 'hail2u/vim-css3-syntax'
+  Plug 'digitaltoad/vim-pug'
   Plug 'burnettk/vim-angular'
-  Plug 'OrangeT/vim-csharp'
   Plug 'leafgarland/typescript-vim'
+  Plug 'StanAngeloff/php.vim'
+
+  " Search
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
 
   " Enhancements
-  Plug 'Shougo/unite.vim'
-  Plug 'Shougo/unite-session'
-  Plug 'Shougo/vimproc.vim'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'lilydjwg/colorizer'
-  Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-abolish'
-  Plug 'scratch.vim'
-  Plug 'sirver/ultisnips'
-  Plug 'honza/vim-snippets'
-  Plug 'xolox/vim-misc'
-
+  Plug 'diepm/vim-rest-console'
 
   " Color schemes
   Plug 'davidhavard/base16-vim'

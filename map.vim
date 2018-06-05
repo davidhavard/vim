@@ -15,8 +15,8 @@ map <Left>  :bp<cr>
 nmap <Left>  :bp<cr>
 nmap <Right> :bn<cr>
 
-nnoremap <C-p> :Unite -start-insert file_rec/async<cr>
-nnoremap <C-b> :Unite buffer<cr>
-nnoremap <C-f> :Unite grep:.<cr>
-nnoremap <C-m> :Unite menu<cr>
-nnoremap <C-s> :Unite session<cr>
+nnoremap <C-p> :Files<cr>
+nnoremap <C-f> :Ag<cr>
+nnoremap <C-b> :Buffers<cr>
+
+vnoremap <C-n> :norm 
